@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+         
+        int sum=0;
+        int i = a;
+        for (;;)
+        {
+            if(i <= b)
+            {
+              sum += i;
+                i++;
+            }
+            else{
+                break;
+            }
+        }
+        System.out.println("The sum of Range value from " + a + " to " + b + " is " + sum + ".0");
+    }
+}
